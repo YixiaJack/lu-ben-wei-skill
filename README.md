@@ -93,11 +93,43 @@
 
 ## 安装
 
+### 方式一：一键安装（推荐）
+
+<details>
+<summary><strong>前置条件：安装 Node.js（已有的跳过）</strong></summary>
+
+1. 打开 [nodejs.org](https://nodejs.org/)，下载 **LTS 版本**
+2. 双击安装包，一路点「下一步」即可
+3. 安装完成后打开终端（Windows 用 PowerShell，Mac 用 Terminal），验证：
+
+```bash
+node --version
+```
+
+显示 `v18.x.x` 或更高版本号就行。
+
+</details>
+
+然后在终端运行：
+
 ```bash
 npx skills add YixiaJack/lu-beng-wei-skill
 ```
 
-然后在 Claude Code 里触发：
+看到 `✔ Skill installed` 就成功了。装完后在你常用的 AI 编程工具里直接触发即可。
+
+### 方式二：手动安装（不想用命令行的看这里）
+
+1. 去 [GitHub 仓库](https://github.com/YixiaJack/lu-beng-wei-skill) 下载 `SKILL.md` 文件
+2. 放到你项目的 skills 目录中（例如 `.claude/skills/`、`.cursor/skills/` 等，取决于你用的工具）
+
+就这么简单，不需要任何命令。
+
+---
+
+## 使用
+
+在你的 AI 编程工具里输入触发词：
 
 ```
 > 卢本伟
@@ -105,6 +137,14 @@ npx skills add YixiaJack/lu-beng-wei-skill
 > 卢姥爷
 > 用卢本伟的方式
 > 开哥怎么看
+```
+
+激活后直接问问题：
+
+```
+> 我要参加比赛但对手比我强，怎么办
+> 在网上被人黑了怎么处理
+> 家里穷感觉没出路
 ```
 
 ---
