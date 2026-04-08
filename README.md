@@ -113,7 +113,7 @@ node --version
 然后在终端运行：
 
 ```bash
-npx skills add YixiaJack/lu-beng-wei-skill
+npx skills add YixiaJack/lu-ben-wei-skill
 ```
 
 看到 `✔ Skill installed` 就成功了。装完后在你常用的 AI 编程工具里直接触发即可。
